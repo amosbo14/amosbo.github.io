@@ -1,0 +1,16 @@
+{
+  "hash": "87eb24361c53884199cb8978a0f5b601",
+  "result": {
+    "markdown": "---\ntitle: \"hw2\"\neditor: visual\n---\n\n::: {.cell}\n\n:::\n\n\n\n\n## Question 2a\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](hw2_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n## Question 2b\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](hw2_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](hw2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](hw2_files/figure-html/unnamed-chunk-4-2.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "hw2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

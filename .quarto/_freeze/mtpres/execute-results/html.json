@@ -1,0 +1,16 @@
+{
+  "hash": "290e45ab2d470211886e24b7b8ce642e",
+  "result": {
+    "markdown": "---\ntitle: \"Midterm Presentation\"\neditor: visual\n---\n\n\n# California Housing Prices\n\n## Andrew Mosbo and Michelle Gagliardo\n\n### 3/30/23\n\n### DANL-310\n\n### Dr. Choe\n\n## Why is this Important?\n\nHouses in California can range from a few thousand dollars to hundreds of millions. If we look at the median price for each \"block\", we can use a data set which is less skewed. It is interesting because of the range of prices, we might be able to find a model which can explain the relationship between median house cost and the attributes of the houses. So, can we find a model that can predict house cost?\n\n## The Data\n\nLooking at a map of the houses in California with information on the house price and population, we can see that areas close to the coast, like LA and San Francisco, have a higher cost while more inland areas have a lower cost.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](mtpres_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](mtpres_files/figure-html/unnamed-chunk-1-2.png){width=672}\n:::\n:::\n\n\nSince we are dealing with ordered pair data for location, it might be important to create a new variable which represents the distance to the coast. This could be obtained using Tableau.\n\n## Model Type\n\nOur model will most likely use a linear model.\n\n## Plans\n\nWe could use modified data which could be represented as proportions or percentages. For example, we have totalRooms and totalBedrooms variables. If we consider a variable of percentage of rooms which are bedrooms, the numbers would be better represented. We could expect more expensive houses to have lower percentage of bedrooms compared to cheaper houses.\n",
+    "supporting": [
+      "mtpres_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

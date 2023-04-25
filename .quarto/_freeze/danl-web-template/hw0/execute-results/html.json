@@ -1,0 +1,16 @@
+{
+  "hash": "4e4be4bfa14a89dc84fd4046e838cc80",
+  "result": {
+    "markdown": "---\ntitle: \"Homework 0\"\nformat: html\neditor: visual\n---\n\n\n\n\n# ggplot\n\n## Why ggplot is awesome\n\nThe following boxplot shows how the distribution of city MPG (`cty`) varies by a type of cars (`class`).\n\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot(mpg) +\n  geom_boxplot(aes(x = class, y = cty, fill = class))\n```\n\n::: {.cell-output-display}\n![](hw0_files/figure-html/mpg-box-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "hw0_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

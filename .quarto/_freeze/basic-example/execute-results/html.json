@@ -1,0 +1,16 @@
+{
+  "hash": "3f34992352f25be3c3a78e8566b647de",
+  "result": {
+    "markdown": "---\ntitle: \"Habbit\"\nauthor: \"Awesome Me\"\ndate: \"April 05, 2023\"\nformat:\n  html:\n    toc: true\n    toc-location: left\n    number-sections: true\neditor: visual\n---\n\n\n\n\n## Quarterly Results {.tabset .tabset-pills}\n\n### By Product\n\n(tab content) 1\n\n### By Region\n\n(tab content) 2\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\nggplot(mpg) +\n  geom_boxplot(aes(x = class, y = hwy))\n```\n\n::: {.cell-output-display}\n![](basic-example_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n# Example Title {.unnumbered}\n\nHere is some example title.\n\n## Section X\n\nThis is my introduction.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nx <- 1\nprint(x)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 1\n```\n:::\n:::\n\n\n# Section 1\n\nWake up\n\n## Section 1.1\n\nDrink water\n\n## Section 1.2\n\nSleep again\n\n# Section 2\n\nWake up\n",
+    "supporting": [
+      "basic-example_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

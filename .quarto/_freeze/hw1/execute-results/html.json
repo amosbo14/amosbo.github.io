@@ -1,0 +1,16 @@
+{
+  "hash": "4f0e8d7047c86e6c98459863459eee14",
+  "result": {
+    "markdown": "---\ntitle: \"Homework 1\"\nformat: html\neditor: visual\n---\n\n\n\n\n## Q2a.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](hw1_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n## Q2b.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](hw1_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n## Q2c.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](hw1_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n## Q2d.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](hw1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\n\n## Q2e.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](hw1_files/figure-html/unnamed-chunk-5-1.png){width=672}\n:::\n:::\n\n\n## Q2f.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](hw1_files/figure-html/unnamed-chunk-6-1.png){width=672}\n:::\n:::\n\n\n## Q2g.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](hw1_files/figure-html/unnamed-chunk-7-1.png){width=672}\n:::\n:::\n\n\n## Q2h.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](hw1_files/figure-html/unnamed-chunk-8-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "hw1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

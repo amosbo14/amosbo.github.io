@@ -1,0 +1,64 @@
+---
+title: "lab3"
+editor: visual
+---
+
+
+```{r, message=F, echo = F, warning = F}
+library(tidyverse)
+library(socviz)
+library(lubridate)
+library(geofacet)
+```
+
+```{r, echo = F, warning = F, message=F}
+titanic <- read_csv(
+  'https://bcdanl.github.io/data/titanic_cleaned.csv')
+
+facet2_names <- list(
+  'FALSE'="DIED",
+  'TRUE'="SURVIVED"
+)
+facet1_names <- list(
+  '1st'="1st",
+  '2nd'="2nd",
+  '3rd'="3rd"
+)
+
+
+
+plot_labeller <- function(variable,value){
+  if (variable=='facet1') {
+        return(facet2_names[value])
+  } else {
+    return(as.character(value))
+  }
+}
+
+ggplot(titanic) +
+  geom_bar(aes(x = sex, fill = sex), color = 'white') +
+  facet_grid(class~survived, labeller = plot_labeller)
+```
+
+
+
+
+```{r}
+nyc_flights <- read_csv(
+  'https://bcdanl.github.io/data/nyc_flights_grouped.csv')
+
+dat <- nyc_flights %>% 
+  group_by(carrier_full) %>% 
+  summarise(n = n())
+
+dat$carrier_full <- fct_reorder(dat$carrier_full, dat$n)
+
+ggplot(dat, aes(x = carrier_full, y = n, fill = carrier_full)) +
+  geom_bar( color = 'white', stat = 'identity') +
+  coord_flip() +
+  geom_text(aes(x = carrier_full, y = n, label = n),nudge_x = .2, nudge_y = 5000, color = 'black' )+
+  theme_wsj() +
+  scale_fill_manual(values = c('Delta' = 'red', 'American' = 'red')) +
+  guides(fill = 'none')
+```
+
