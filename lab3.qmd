@@ -3,12 +3,12 @@ title: "lab3"
 editor: visual
 ---
 
-
 ```{r, message=F, echo = F, warning = F}
 library(tidyverse)
 library(socviz)
 library(lubridate)
 library(geofacet)
+library(ggthemes)
 ```
 
 ```{r, echo = F, warning = F, message=F}
@@ -40,9 +40,6 @@ ggplot(titanic) +
   facet_grid(class~survived, labeller = plot_labeller)
 ```
 
-
-
-
 ```{r}
 nyc_flights <- read_csv(
   'https://bcdanl.github.io/data/nyc_flights_grouped.csv')
@@ -61,4 +58,3 @@ ggplot(dat, aes(x = carrier_full, y = n, fill = carrier_full)) +
   scale_fill_manual(values = c('Delta' = 'red', 'American' = 'red')) +
   guides(fill = 'none')
 ```
-
