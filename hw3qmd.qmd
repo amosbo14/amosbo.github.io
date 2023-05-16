@@ -1,0 +1,11 @@
+---
+title: "hw3"
+editor: visual
+---
+
+```{=html}
+<style>iframe{height: 1200px; width: 1000px}</style>
+<iframe height="100%" width="100%" frameborder="no"
+src="https://amosbo14.shinyapps.io/hwsh3/">
+</iframe>
+```

@@ -103,4 +103,51 @@ for(i in 1:nrow(cali_dat)){
 }
 
 
+hist(cali_dat$Distance)
+
+
+plot(cali_dat$Distance, cali_dat$medianHouseValue)
+
+
+
+plot(cali_dat$Distance, log(cali_dat$medianHouseValue))
+
+## Models and testing/training data -------
+
+set.seed(84392)
+
+d <- runif(nrow(cali_dat), 0, 1)
+
+dtrain <- filter(cali_dat, d <= 0.3)
+dtest <- filter(cali_dat, d > 0.3)
+
+
+mod <- lm( medianHouseValue ~ Distance + medianIncome + population + households + totalBedrooms + totalRooms + housingMedianAge,
+           data = dtrain)
+
+summary(mod)
+
+plot(mod)
+
+
+dtest$pred <- predict(mod, newdata = dtest)
+
+
+p <- ggplot(dtest, aes(y = pred - medianHouseValue))
+
+
+p + geom_point(aes(x = Distance))
+
+p + geom_point(aes(x = totalRooms))
+
+p + geom_point(aes(x = housingMedianAge))
+
+p + geom_point(aes(x = totalBedrooms))
+
+p + geom_point(aes(x = population))
+
+p + geom_point(aes(x = households))
+
+p + geom_point(aes(x = medianIncome))
+
 
