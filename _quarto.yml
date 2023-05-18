@@ -10,7 +10,7 @@ website:
     pinned: true
     left:
       - text: Project
-        href: mtpres.qmd
+        href: danlfinal.qmd
       - text: Homework
         menu:
           - text: hw0
